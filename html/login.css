@@ -1,0 +1,82 @@
+body {
+    background-image: url('images/earth-health-care-13340815.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Navigation Bar */
+.nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Login Form */
+#login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+/* Light Blue Button */
+.btn-lightblue {
+    background-color: #add8e6;
+    border-color: #add8e6;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lightblue:hover {
+    background-color: #90c3d4;
+    border-color: #90c3d4;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    color: #007bff;
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #333;
+}
+/* Add this to your login.css or within a <style> tag in the <head> section */
+
+   
