@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Bill</title>
+    <style>
+        /* Basic CSS styles for form layout */
+        form {
+            width: 50%;
+            margin: 50px auto;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="generate_bill.php" method="POST">
+        <h2>Generate Bill</h2>
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required>
+        <label for="service_type">Service Type:</label>
+        <select id="service_type" name="service_type" required>
+            <option value="Consultation">Consultation</option>
+            <option value="Lab Test">Lab Test</option>
+            <option value="Medication">Medication</option>
+        </select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+        <label for="amount">Billing:</label>
+        <input type="number" id="bills" name="bills" min="0" step="0.01" required>
+        <input type="submit" value="Generate Bill">
+    </form>
+</body>
+</html>
