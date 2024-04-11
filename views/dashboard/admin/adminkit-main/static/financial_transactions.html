@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Transactions</title>
+    <!-- Include your CSS and JS files here -->
+</head>
+<body>
+    <h1>Financial Transactions</h1>
+
+    <!-- Table to display financial transactions -->
+    <table id="transactionsTable">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Transactions will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <!-- Form to add a new transaction -->
+    <form id="addTransactionForm" action="process_financial_transactions.php" method="post">
+        <h2>Add New Transaction</h2>
+        <label for="transactionType">Type:</label>
+        <select id="transactionType" name="transactionType">
+            <option value="payment_received">Payment Received</option>
+            <option value="payment_made">Payment Made</option>
+            <!-- Add more transaction types as needed -->
+        </select>
+        <label for="transactionAmount">Amount:</label>
+        <input type="number" id="transactionAmount" name="transactionAmount" required>
+        <label for="transactionDate">Date:</label>
+        <input type="date" id="transactionDate" name="transactionDate" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <!-- Form to edit a transaction (hidden by default) -->
+    <form id="editTransactionForm" action="process_financial_transactions.php" method="post" style="display: none;">
+        <h2>Edit Transaction</h2>
+        <input type="hidden" id="editTransactionId" name="editTransactionId">
+        <label for="editTransactionType">Type:</label>
+        <select id="editTransactionType" name="editTransactionType">
+            <option value="payment_received">Payment Received</option>
+            <option value="payment_made">Payment Made</option>
+            <!-- Add more transaction types as needed -->
+        </select>
+        <label for="editTransactionAmount">Amount:</label>
+        <input type="number" id="editTransactionAmount" name="editTransactionAmount" required>
+        <label for="editTransactionDate">Date:</label>
+        <input type="date" id="editTransactionDate" name="editTransactionDate" required>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>
