@@ -1,0 +1,91 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Styles for the main content container */
+.main-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styles for each card */
+.node_category.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 20px; /* Adds space to the right of each card */
+    width: 100%;
+    max-width: 450px; /* Adjust this value to control the width of the cards */
+}
+
+/* Styles for the card body */
+.card-body {
+    padding: .625rem;
+}
+
+/* Styles for the card title */
+.card-body h3.lead {
+    margin-top: 0;
+    color: #333333;
+}
+
+/* Styles for the list items within the card */
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.card-body ul li:last-child {
+    border-bottom: none;
+}
+
+/* Styles for the links within the list items */
+.card-body ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-body ul li a:hover {
+    text-decoration: underline;
+}
+.node_category.card:last-child {
+    margin-right: 0;
+}
+
+/* Responsive design: On smaller screens, adjust the margin for better spacing */
+@media (max-width: 768px) {
+    .node_category.card {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0; /* Reset the right margin for smaller screens */
+    }
+}
+
+
+
+
+
+.page-context-header {
+    margin-left: 2em;
+}
+
+div#page-content {
+    margin-left: 2em;
+}
+
+section.node_category.card.d-inline-block.w-100.mb-3 {
+    float: left;
+}
